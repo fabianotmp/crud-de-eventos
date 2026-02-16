@@ -15,7 +15,7 @@
         <p class="event-city"><i class="bi bi-geo-alt"></i> {{$event->city}}</p>
         <p class="event-date"><i class="bi bi-calendar4-event"></i> {{ date('d/m/Y', strtotime($event->date))}}</p>
         <p class="participants"><i class="bi bi-person"></i> Participantes</p>
-        <p class="event-owner"><i class="bi bi-star"></i> Organizador</p>
+        <p class="event-owner"><i class="bi bi-star"></i> {{$eventOwner['name']}}</p>
         <h3 class="mt-4">O evento conta com:</h3>
         <ul class="list-group list-group-flush mb-4">
             @foreach($event->items as $item)
