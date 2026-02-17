@@ -3,14 +3,19 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Event extends Model
 {
-    protected $casts = ['items' => 'array'];
+    protected $casts = [
+        'items' => 'array',
+        'date' => 'datetime'
+    ];
 
-    protected $dates = ['date'];
+    protected $guarded = [];
 
-    public function user(){
-        return $this->belongsTo('App\Model\User');
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 }

@@ -13,14 +13,14 @@
     <nav class="navbar navbar-expand-lg py-3 sticky-top border-bottom bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center fw-bold" href="/">
-                <i class="bi bi-mask me-2 fs-3 text-primary"></i> Moony
+                <i class="bi bi-mask me-2 fs-3"></i> Moony
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-2">
-                    <li class="nav-item"><a href="/" class="nav-link">Eventos</a></li>
+                    <li class="nav-item"><a href="/dashboard" class="nav-link">Meus Eventos</a></li>
                     <li class="nav-item"><a href="/events/create" class="nav-link">Criar Eventos</a></li>
                     @auth
                     <li class="nav-item">
